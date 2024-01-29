@@ -1,0 +1,89 @@
+{
+	"texture_size": [48, 48],
+	"textures": {
+		"backpack": "explorersgear:item/backpack",
+		"particle": "explorersgear:item/backpack"
+	},
+	"elements": [
+		{
+			"name": "backpack_body",
+			"from": [4, 2.02, 5.5],
+			"to": [12, 14.03, 10.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8.025, 8]},
+			"faces": {
+				"north": {"uv": [1.66667, 1.66667, 4.33333, 5.66667], "texture": "#backpack"},
+				"east": {"uv": [0, 1.66667, 1.66667, 5.66667], "texture": "#backpack"},
+				"south": {"uv": [6, 1.66667, 8.66667, 5.66667], "texture": "#backpack"},
+				"west": {"uv": [4.33333, 1.66667, 6, 5.66667], "texture": "#backpack"},
+				"up": {"uv": [4.33333, 1.66667, 1.66667, 0], "texture": "#backpack"},
+				"down": {"uv": [7, 0, 4.33333, 1.66667], "texture": "#backpack"}
+			}
+		},
+		{
+			"name": "backpack_flask",
+			"from": [1, 4.02, 6.5],
+			"to": [4, 12.03, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8.025, 9]},
+			"faces": {
+				"north": {"uv": [1, 9.33333, 2, 12], "texture": "#backpack"},
+				"east": {"uv": [0, 9.33333, 1, 12], "texture": "#backpack"},
+				"south": {"uv": [3, 9.33333, 4, 12], "texture": "#backpack"},
+				"west": {"uv": [2, 9.33333, 3, 12], "texture": "#backpack"},
+				"up": {"uv": [2, 9.33333, 1, 8.33333], "texture": "#backpack"},
+				"down": {"uv": [3, 8.33333, 2, 9.33333], "texture": "#backpack"}
+			}
+		},
+		{
+			"name": "backpack_sleepingroll",
+			"from": [3, -2.25, 6],
+			"to": [13, 1.76, 10],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 0.025, 8.5]},
+			"faces": {
+				"north": {"uv": [1.33333, 7, 4.66667, 8.33333], "texture": "#backpack"},
+				"east": {"uv": [0, 7, 1.33333, 8.33333], "texture": "#backpack"},
+				"south": {"uv": [6, 7, 9.33333, 8.33333], "texture": "#backpack"},
+				"west": {"uv": [4.66667, 7, 6, 8.33333], "texture": "#backpack"},
+				"up": {"uv": [4.66667, 7, 1.33333, 5.66667], "texture": "#backpack"},
+				"down": {"uv": [8, 5.66667, 4.66667, 7], "texture": "#backpack"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 0, -1.75],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 0, -1.75],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_righthand": {
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_lefthand": {
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"ground": {
+			"rotation": [90, 0, 0],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"gui": {
+			"rotation": [22.5, 45, 0],
+			"translation": [0, 1.5, 0],
+			"scale": [0.85, 0.85, 0.85]
+		},
+		"fixed": {
+			"rotation": [0, 180, -1],
+			"translation": [0, 2.25, 0]
+		}
+	},
+	"groups": [
+		{
+			"name": "backpack",
+			"origin": [0, 18.025, 5],
+			"color": 0,
+			"nbt": "{}",
+			"children": [0, 1, 2]
+		}
+	]
+}
