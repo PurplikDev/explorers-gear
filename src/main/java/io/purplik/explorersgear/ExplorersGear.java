@@ -14,7 +14,6 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(ExplorersGear.MOD_ID)
 public class ExplorersGear {
     public static final String MOD_ID = "explorersgear";
@@ -34,6 +33,13 @@ public class ExplorersGear {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.BACKPACK);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.CANTEEN);
+            event.accept(ModItems.MARSHMALLOW);
+            event.accept(ModItems.ROASTED_MARSHMALLOW);
+            event.accept(ModItems.BURNT_MARSHMALLOW);
         }
     }
 
